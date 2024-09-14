@@ -90,11 +90,15 @@ body {
   display: flex;
   justify-content: space-between;
   width: 100%;
-  margin-top: 4%;
   margin-right: auto;
   margin-left: auto;
+  height: 10vh;
+  align-items: center;
 }
 
+.descriptions {
+  min-width: 80%;
+}
 .descriptions__block {
   display: flex;
   width: 500%;
@@ -104,22 +108,23 @@ body {
   display: flex;
   justify-content: space-between;
   align-content: center;
-  gap: 2%;
-  height: 5%;
-  max-width: 20%;
+  height: 100%;
+  width: 30%;
 }
 .nav {
-  height: 20px;
-  width: 50px;
+  width: 30%;
   cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .bar {
-  height: 8px;
-  width: 30px;
+  width: 60%;
   background-color: #ddd;
   opacity: 0.5;
-  border-radius: 10px;
+  border-radius: 10rem;
   transition: all 0.4s ease;
+  height: 12%;
 }
 
 .bar:hover {
@@ -135,6 +140,7 @@ input[name="mem"] {
   display: flex;
   width: 400%;
   height: 100%;
+  margin-bottom: 4%;
 }
 
 .slide {
@@ -172,6 +178,7 @@ input[name="mem"] {
 #mem1:checked ~ .transitions .descriptions .descriptions__block .checked {
   margin-left: 0;
 }
+
 #mem2:checked ~ .transitions .descriptions .descriptions__block .checked {
   margin-left: -25%;
 }
